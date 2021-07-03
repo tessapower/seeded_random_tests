@@ -1,0 +1,26 @@
+name: Rerun Tests with Seed
+
+on:
+  workflow_dispatch:
+    inputs:
+      seed:
+        description: 'Click to start or enter a seed'
+        default: '1234'
+        required: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2.3.4
+      with:
+        repository: ${{ github.repository }}
+    
+    - name: Install dependencies
+      run: bundle install
+  
+    - name: Run tests with seed
+      run: echo "bundle exec rspec --seed ${{ github.event.inputs.seed }}"
+      
