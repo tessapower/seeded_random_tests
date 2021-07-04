@@ -87,13 +87,14 @@ bundle exec rspec ./spec/greeter_spec.rb:16
 ```bash
 bundle exec rspec --seed 52157
 ```
-![Greeter Test Run](./assets/greeter-test-rerun-52157.png)
+![Greeter Test Rerun](./assets/greeter-test-rerun-52157.png)
 
 ## Can We Reproduce Tests that were run in a Remote Environment?
 
 **Yes**—copy the seed that appears in the logs of the remote test run (GitHub Actions, CircleCi, Bitrise, etc.):
 
-
+![Remote Test Run](./assets/remote-test-run.png)
 
 Run the test command in your terminal with the `--seed xxxxx` flag:
 
+![Rerun of Remote Test Run Locally](./assets/run-remote-testrun-locally.png)
