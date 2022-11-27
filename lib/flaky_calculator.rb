@@ -1,4 +1,4 @@
-class Flaky_Calculator
+class FlakyCalculator
   def maybe_add(a, b)
     luck = rand
     return a + b unless luck < 0.3
