@@ -1,5 +1,9 @@
 # Seeded Random Tests
 
+Repo for a talk I gave on randomized testing using RSpec and FFaker.
+
+See also: [tessapower/my-pseudo-rand](https://github.com/tessapower/my-pseudo-rand).
+
 Sometimes tests that make use of random data fail. In those cases, we want to be able reproduce the tests that failed
 with the same data. This can be problematic if we're using a random data generator that generates new data on-the-fly.
 Each time we run tests, *new* random data is generated, so we cannot simply rerun the tests that failed. Not being able
