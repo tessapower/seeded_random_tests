@@ -14,13 +14,12 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2.3.4
+      uses: actions/checkout@v4
     - name: Set up Ruby
-      uses: ruby/setup-ruby@473e4d8fe5dd94ee328fdfca9f8c9c7afc9dae5e
+      uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '2.7'
-    - name: Install Gems
-      run: bundle install
+        ruby-version: '3.3'
+        bundler-cache: true
     - name: Run tests with seed
-      run: echo "bundle exec rspec --seed ${{ github.event.inputs.seed }}"
+      run: bundle exec rspec --seed ${{ github.event.inputs.seed }}
       

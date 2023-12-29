@@ -39,7 +39,7 @@ For a better understanding and intuition on Pseudo-Random Number Generators, tak
 
 ## Installation
 
-**Prerequisites:** Ruby (2.7)
+**Prerequisites:** Ruby (3.3)
 
 Clone or fork this repository.
 
