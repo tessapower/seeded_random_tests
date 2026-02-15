@@ -1,6 +1,8 @@
 # Seeded Random Tests
 
-Repo for a talk I gave on randomized testing using RSpec and FFaker.
+[![Run Tests](https://github.com/tessapower/seeded_random_tests/actions/workflows/run-tests.yml/badge.svg)](https://github.com/tessapower/seeded_random_tests/actions/workflows/run-tests.yml) [![Rerun Tests with Seed](https://github.com/tessapower/seeded_random_tests/actions/workflows/rerun-tests-with-seed.yml/badge.svg)](https://github.com/tessapower/seeded_random_tests/actions/workflows/rerun-tests-with-seed.yml)
+
+Repo for a talk I gave on randomized testing using RSpec and FFaker. **Click the failing tests above for live examples!**
 
 See also: [tessapower/my-pseudo-rand](https://github.com/tessapower/my-pseudo-rand).
 
